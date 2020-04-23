@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Pixel_2(failed)">
+    <parameter name="emulator" value="false"/>
+    <parameter name="chromeDriverPort" value="11000"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value=""/>
+    <parameter name="deviceName" value="Android"/>
+    <parameter name="systemPort" value="10000"/>
+    <classes>
+      <class name="com.qa.tests.ProductTests">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="searchForAnItem"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductTests -->
+    </classes>
+  </test> <!-- Pixel_2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
